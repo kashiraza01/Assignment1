@@ -11,9 +11,8 @@ public class SplashScreenMain extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash_screen_main_01);
 
-        // Navigate to Sender Info Activity after 3 seconds
         new Handler().postDelayed(() -> {
-            Intent intent = new Intent(SplashScreenMain.this, SenderDetailsActivity.class);
+            Intent intent = new Intent(SplashScreenMain.this, SecondSenderActivty.class);
             startActivity(intent);
             finish();
         }, 5000);
