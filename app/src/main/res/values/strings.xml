@@ -8,4 +8,8 @@
     <string name="address">Address</string>
     <string name="country">Country</string>
     <string name="next">NEXT</string>
+    <string name="receiver_details">RECEIVER DETAILS</string>
+    <string name="floating_action_button">Floating Action Button</string>
+    <string name="name">Name</string>
+    <string name="review_information">Review Information</string>
 </resources>

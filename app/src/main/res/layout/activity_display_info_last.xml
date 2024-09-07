@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_small"
+    android:background="@drawable/fab_background"
+    >
+
+    <TextView
+        android:id="@+id/reviewInformationHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="85dp"
+        android:background="@color/red"
+        android:padding="16dp"
+        android:text="@string/review_information"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:id="@+id/infoTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reviewInformationHeading"
+        android:layout_marginTop="16dp"
+        android:stretchColumns="*">
+
+        <TableRow>
+            <TextView
+                android:text="@string/name"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+            <TextView
+                android:text="@string/country"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+            <TextView
+                android:text="@string/address"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+            <TextView
+                android:text="@string/contact_information"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/sndrNameTextView"
+                android:padding="8dp"/>
+            <TextView
+                android:id="@+id/sndrCountryTextView"
+                android:padding="8dp"/>
+            <TextView
+                android:id="@+id/sndrAddressTextView"
+                android:padding="8dp"/>
+            <TextView
+                android:id="@+id/sndrContactInfoTextView"
+                android:padding="8dp"/>
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:layout_width="309dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_span="4"
+                android:padding="8dp"
+                android:src="@drawable/img" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/rcvrNameTextView"
+                android:padding="8dp"/>
+            <TextView
+                android:id="@+id/rcvrCountryTextView"
+                android:padding="8dp"/>
+            <TextView
+                android:id="@+id/rcvrAddressTextView"
+                android:padding="8dp"/>
+            <TextView
+                android:id="@+id/rcvrContactInfoTextView"
+                android:padding="8dp"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <ImageButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/ic_back"
+        android:background="@color/red"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:radius="50dp"
+        android:contentDescription="@string/floating_action_button"/>
+
+</RelativeLayout>

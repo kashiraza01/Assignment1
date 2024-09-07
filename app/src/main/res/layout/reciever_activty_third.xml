@@ -15,36 +15,26 @@
         android:gravity="center"
         android:padding="@dimen/padding_small"
         android:paddingBottom="@dimen/padding_medium"
-        android:text="@string/sender_details"
+        android:text="@string/receiver_details"
         android:textColor="@color/white"
         android:textSize="@dimen/text_size_large"
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/emailETField"
+        android:id="@+id/rcvrEmailETField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/email"
         android:inputType="textEmailAddress"
         android:padding="@dimen/padding_small"
+        android:paddingTop="@dimen/padding_large"
         android:layout_marginTop="@dimen/padding_large"
-        android:background="@color/white"
-        android:layout_marginBottom="@dimen/padding_small"
-        android:importantForAutofill="no"/>
-
-    <EditText
-        android:id="@+id/contactInfoETField"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/contact_information"
         android:importantForAutofill="no"
-        android:padding="@dimen/padding_small"
         android:background="@color/white"
-        android:layout_marginBottom="@dimen/padding_small"
-         />
+        android:layout_marginBottom="@dimen/padding_small"/>
 
     <EditText
-        android:id="@+id/fullNameETField"
+        android:id="@+id/rcvrFullNameETField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/full_name"
@@ -54,28 +44,39 @@
         android:layout_marginBottom="@dimen/padding_small"/>
 
     <EditText
-        android:id="@+id/addressETField"
+        android:id="@+id/rcvrContactInfoETField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/padding_small"
+        android:hint="@string/contact_information"
+        android:padding="@dimen/padding_small"
         android:background="@color/white"
-        android:hint="@string/address"
         android:importantForAutofill="no"
-        android:padding="@dimen/padding_small" />
+        android:layout_marginBottom="@dimen/padding_small"/>
 
     <EditText
-        android:id="@+id/countryEditText"
+        android:id="@+id/rcvrCountryETField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/padding_large"
-        android:background="@color/white"
         android:hint="@string/country"
         android:importantForAutofill="no"
-        android:padding="@dimen/padding_small" />
+        android:padding="@dimen/padding_small"
+        android:background="@color/white"
+        android:layout_marginBottom="@dimen/padding_small"/>
+
+    <EditText
+        android:id="@+id/rcvrAddressETField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/address"
+        android:padding="@dimen/padding_small"
+        android:background="@color/white"
+        android:importantForAutofill="no"
+        android:layout_marginBottom="@dimen/padding_large"/>
+
 
 
     <Button
-        android:id="@+id/navButton"
+        android:id="@+id/rcvrNavButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/next"
@@ -83,6 +84,7 @@
         android:backgroundTint="@color/red"
         android:layout_gravity="center_horizontal"
         android:padding="@dimen/padding_small"
+        android:importantForAutofill="no"
         android:textStyle="bold"/>
 
 </LinearLayout>
